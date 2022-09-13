@@ -45,13 +45,7 @@ jobs:
         with:
           file: monplan.tfplan
           framework: terraform
-          output_format: cli, sarif
-          
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v3.1.0
-        with:
-          name: checkkov
-          path: ./results.sarif 
+          output_format: cli
           
       # apply a execution plan https://www.terraform.io/cli/commands/apply      
       - name: Terraform Apply
