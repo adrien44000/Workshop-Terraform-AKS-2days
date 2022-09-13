@@ -49,6 +49,7 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
+          name: checkkov
           path: results.sarif    
        
       # apply a execution plan https://www.terraform.io/cli/commands/apply      
