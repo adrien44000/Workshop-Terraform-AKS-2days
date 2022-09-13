@@ -45,6 +45,7 @@ jobs:
         with:
           file: monplan.tfplan
           framework: terraform
+          soft_fail: false
           output_format: cli
           
       # apply a execution plan https://www.terraform.io/cli/commands/apply      
